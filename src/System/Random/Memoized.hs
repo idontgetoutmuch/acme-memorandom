@@ -15,6 +15,14 @@
 -- a lazy table indexed by serialized 'StdGen'. Monomorphism is used to
 -- facilitate memoization, users should adapt their design to work with random
 -- 'Int' values only.
+--
+-- In a benchmark, the initial generation of 100000 random 'Int's took 10.30
+-- seconds and consumed 2.5 gigabytes of memory. Generating the 100000 'Int's
+-- again from the same seed only took 2.06 seconds, a 5-fold speedup thanks to
+-- memoization!
+--
+-- Incidentally, generating the 100000 'Int's with the non-memoized function
+-- took 0.12 seconds, but that of course lacks all the benefits of memoization.
 module System.Random.Memoized
   ( randomR'
   , random'
