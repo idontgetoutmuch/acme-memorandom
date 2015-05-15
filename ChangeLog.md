@@ -1,4 +1,4 @@
-# UNRELEAESD
+# 0.0.2 (2015-05-15)
 
 * Implement memoized randomRs', randoms', randomRIO', randomIO'.
 
