@@ -9,7 +9,7 @@
 -- License     : MIT
 -- Maintainer  : Johan Kiviniemi <devel@johan.kiviniemi.name>
 -- Stability   : provisional
--- Portability : TypeFamilies, TypeOperators
+-- Portability : CPP, TypeFamilies, TypeOperators
 --
 -- A library for generating random numbers in a memoized manner. Implemented as
 -- a lazy table indexed by serialized 'StdGen'. Monomorphism is used to
