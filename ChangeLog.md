@@ -1,6 +1,7 @@
 # UNRELEASED
 
 * Rename System.Random.MemoRandom as System.Random.Memoized.
+* Re-export System.Random from System.Random.Memoized.
 
 # 0.0.2 (2015-05-15)
 

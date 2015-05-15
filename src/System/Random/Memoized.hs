@@ -22,6 +22,7 @@ module System.Random.Memoized
   , randoms'
   , randomRIO'
   , randomIO'
+  , module System.Random
   ) where
 
 import Data.MemoTrie
