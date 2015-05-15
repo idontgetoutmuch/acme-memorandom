@@ -31,7 +31,7 @@ source-repository head
 library
   exposed-modules: System.Random.MemoRandom
   hs-source-dirs: src
-  other-extensions: TypeFamilies, TypeOperators
+  other-extensions: CPP, TypeFamilies, TypeOperators
   build-depends: base == 4.*
                , MemoTrie == 0.6.*
                , random == 1.*
