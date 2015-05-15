@@ -3,7 +3,7 @@
 {-# LANGUAGE TypeOperators #-}
 
 -- |
--- Module      : Systen.Random.MemoRandom
+-- Module      : Systen.Random.Memoized
 -- Description : Memoized random number generation
 -- Copyright   : © 2015 Johan Kiviniemi
 -- License     : MIT
@@ -15,7 +15,7 @@
 -- a lazy table indexed by serialized 'StdGen'. Monomorphism is used to
 -- facilitate memoization, users should adapt their design to work with random
 -- 'Int' values only.
-module System.Random.MemoRandom
+module System.Random.Memoized
   ( randomR'
   , random'
   , randomRs'
@@ -73,7 +73,7 @@ randomIO' = getStdRandom random'
 -- | Produce an infinite list-equivalent of random values.
 --
 -- Copied from System.Random verbatim (but originally written by the author of
--- MemoRandom, commit 4695ffa).
+-- Memoized, commit 4695ffa).
 {-# INLINE buildRandoms #-}
 buildRandoms :: RandomGen g
              => (a -> as -> as)  -- ^ E.g. '(:)' but subject to fusion

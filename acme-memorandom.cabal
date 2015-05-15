@@ -29,7 +29,7 @@ source-repository head
   location: https://github.com/ion1/acme-memorandom.git
 
 library
-  exposed-modules: System.Random.MemoRandom
+  exposed-modules: System.Random.Memoized
   hs-source-dirs: src
   other-extensions: CPP, TypeFamilies, TypeOperators
   build-depends: base == 4.*
